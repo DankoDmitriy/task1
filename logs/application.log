@@ -1,0 +1,33 @@
+2021-05-20 17:28:42 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0
+2021-05-20 17:28:42 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:28:42 DEBUG [main]: Input CustomArray: null
+2021-05-20 17:29:08 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:29:08 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:29:08 DEBUG [main]: Input CustomArray: null
+2021-05-20 17:32:27 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:32:27 INFO  [main]: Has been found min element min =0
+2021-05-20 17:32:27 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:32:27 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:32:27 INFO  [main]: Has been found min element min =0
+2021-05-20 17:32:51 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:32:51 INFO  [main]: Has been found min element min =0
+2021-05-20 17:32:51 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:32:51 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:32:51 INFO  [main]: Has been found min element min =0
+2021-05-20 17:33:14 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:33:14 INFO  [main]: Has been found min element min=0
+2021-05-20 17:33:14 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:33:14 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:33:14 INFO  [main]: Has been found min element min=0
+2021-05-20 17:34:55 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:34:55 INFO  [main]: Has been found min element. min=0
+2021-05-20 17:34:55 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:34:55 INFO  [main]: Has been found max element. max=9
+2021-05-20 17:34:55 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:34:55 INFO  [main]: Has been found min element. min=0
+2021-05-20 17:35:19 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:35:19 INFO  [main]: Has been found min element. min = 0
+2021-05-20 17:35:19 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:35:19 INFO  [main]: Has been found max element. max = 9
+2021-05-20 17:35:19 DEBUG [main]: Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-20 17:35:19 INFO  [main]: Has been found min element. min = 0

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="">
+    <Properties>
+        <property name="pattern_cmd">%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{5} - %ms%n</property>
+        <property name="pattern_file">%d{yyyy-MM-dd HH:mm:ss} [%t] [%M] [%L] %-5level %logger{5} - %ms%n</property>
+    </Properties>
+    <Appenders>
+
+    </Appenders>
+</Configuration>
