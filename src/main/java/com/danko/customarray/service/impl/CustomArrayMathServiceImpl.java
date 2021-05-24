@@ -1,21 +1,21 @@
 package com.danko.customarray.service.impl;
 
 import com.danko.customarray.entity.CustomArray;
+import com.danko.customarray.exception.CustomArrayException;
 import com.danko.customarray.service.CustomArrayMathService;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-//import org.apache.log4j.Level;
-//import org.apache.log4j.Logger;
 
 public class CustomArrayMathServiceImpl implements CustomArrayMathService {
-    //    private static Logger logger = Logger.getLogger(CustomArrayMathService.class);
-    private static Logger logger = LogManager.getLogger(CustomArrayMathServiceImpl.class);
+    private static Logger logger = LogManager.getLogger();
     private final int FIRST_ELEMENT_INDEX = 0;
 
     @Override
-    public int findMinElement(CustomArray array) {
-//        here need to add exceptions to an NULL array and array size = 0.
+    public int findMinElement(CustomArray array) throws CustomArrayException {
+        if (array == null || array.getLength() == 0) {
+            throw new CustomArrayException("Input CustomArray is empty or null");
+        }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         int result = array.getElementByIndex(FIRST_ELEMENT_INDEX);
         for (int i = 1; i < array.getLength(); i++) {
@@ -28,8 +28,10 @@ public class CustomArrayMathServiceImpl implements CustomArrayMathService {
     }
 
     @Override
-    public int findMaxElement(CustomArray array) {
-//        here need to add exceptions to an NULL array and array size = 0.
+    public int findMaxElement(CustomArray array) throws CustomArrayException {
+        if (array == null || array.getLength() == 0) {
+            throw new CustomArrayException("Input CustomArray is empty or null");
+        }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         int result = array.getElementByIndex(FIRST_ELEMENT_INDEX);
         for (int i = 1; i < array.getLength(); i++) {
@@ -42,8 +44,11 @@ public class CustomArrayMathServiceImpl implements CustomArrayMathService {
     }
 
     @Override
-    public double calculateArithmeticMean(CustomArray array) {
+    public double calculateArithmeticMean(CustomArray array) throws CustomArrayException {
 //        here need to add exceptions to an NULL array and array size = 0.
+        if (array == null || array.getLength() == 0) {
+            throw new CustomArrayException("Input CustomArray is empty or null");
+        }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         double sumArray = calculateSum(array);
         double result = sumArray / array.getLength();
@@ -51,8 +56,10 @@ public class CustomArrayMathServiceImpl implements CustomArrayMathService {
     }
 
     @Override
-    public int calculateSum(CustomArray array) {
-//        here need to add exceptions to an NULL array and array size = 0.
+    public int calculateSum(CustomArray array) throws CustomArrayException {
+        if (array == null || array.getLength() == 0) {
+            throw new CustomArrayException("Input CustomArray is empty or null");
+        }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         int sumArray = 0;
         for (int i = 0; i < array.getLength(); i++) {
@@ -62,8 +69,11 @@ public class CustomArrayMathServiceImpl implements CustomArrayMathService {
     }
 
     @Override
-    public int countQuantityPositiveElements(CustomArray array) {
+    public int countQuantityPositiveElements(CustomArray array) throws CustomArrayException {
 //        here need to add exceptions to an NULL array and array size = 0.
+        if (array == null || array.getLength() == 0) {
+            throw new CustomArrayException("Input CustomArray is empty or null");
+        }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         int result = 0;
         for (int i = 0; i < array.getLength(); i++) {
@@ -75,8 +85,10 @@ public class CustomArrayMathServiceImpl implements CustomArrayMathService {
     }
 
     @Override
-    public int countQuantityNegativeElements(CustomArray array) {
-//        here need to add exceptions to an NULL array and array size = 0.
+    public int countQuantityNegativeElements(CustomArray array) throws CustomArrayException {
+        if (array == null || array.getLength() == 0) {
+            throw new CustomArrayException("Input CustomArray is empty or null");
+        }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         int result = 0;
         for (int i = 0; i < array.getLength(); i++) {
