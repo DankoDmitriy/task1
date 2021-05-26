@@ -1,0 +1,5 @@
+2021-05-24 13:48:00 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 4444
+2021-05-24 13:48:00 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 55555
+2021-05-24 13:48:01 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 66666
+2021-05-24 13:48:01 [main] [parserStringToIntString] [27] DEBUG com.danko.customarray.parser.Parser - java.util.regex.Matcher[pattern=\s?(\d+) region=0,23 lastmatch=]
+2021-05-24 13:48:03 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not validas122 211sd 123ds 123dsa

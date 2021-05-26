@@ -1,0 +1,2 @@
+2021-05-24 12:36:03 [main] [parserStringToIntString] [22] DEBUG com.danko.customarray.parser.Parser - java.util.regex.Matcher[pattern=(d+) region=0,23 lastmatch=]
+2021-05-24 12:36:03 [main] [parserStringToIntString] [22] DEBUG com.danko.customarray.parser.Parser - java.util.regex.Matcher[pattern=(d+) region=0,24 lastmatch=]

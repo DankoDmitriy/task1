@@ -1,0 +1,1 @@
+2021-05-25 14:10:04 [main] [parserStringToIntString] [19] DEBUG com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero

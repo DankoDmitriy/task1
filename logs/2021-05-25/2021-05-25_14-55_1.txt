@@ -1,0 +1,5 @@
+2021-05-25 14:55:38 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->1 22 333
+2021-05-25 14:55:38 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 1
+2021-05-25 14:55:38 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 22
+2021-05-25 14:55:38 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 333
+2021-05-25 14:55:38 [main] [parserStringToIntString] [41] INFO  com.danko.customarray.parser.Parser - int[] created.

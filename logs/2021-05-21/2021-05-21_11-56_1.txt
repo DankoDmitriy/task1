@@ -1,0 +1,24 @@
+2021-05-21 11:56:17 [main] [findMinElement] [17] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:17 [main] [findMinElement] [24] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found min element. min = 0
+2021-05-21 11:56:17 [main] [findMaxElement] [31] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:17 [main] [findMaxElement] [38] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found max element. max = 9
+2021-05-21 11:56:38 [main] [findMinElement] [17] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:38 [main] [findMinElement] [24] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found min element. min = 0
+2021-05-21 11:56:38 [main] [findMaxElement] [31] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:38 [main] [findMaxElement] [38] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found max element. max = 9
+2021-05-21 11:56:40 [main] [findMinElement] [17] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:40 [main] [findMinElement] [24] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found min element. min = 0
+2021-05-21 11:56:40 [main] [findMaxElement] [31] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:40 [main] [findMaxElement] [38] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found max element. max = 9
+2021-05-21 11:56:45 [main] [findMinElement] [17] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:45 [main] [findMinElement] [24] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found min element. min = 0
+2021-05-21 11:56:45 [main] [findMaxElement] [31] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:45 [main] [findMaxElement] [38] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found max element. max = 9
+2021-05-21 11:56:48 [main] [findMinElement] [17] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:48 [main] [findMinElement] [24] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found min element. min = 0
+2021-05-21 11:56:48 [main] [findMaxElement] [31] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:48 [main] [findMaxElement] [38] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found max element. max = 9
+2021-05-21 11:56:52 [main] [findMinElement] [17] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:52 [main] [findMinElement] [24] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found min element. min = 0
+2021-05-21 11:56:52 [main] [findMaxElement] [31] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-21 11:56:52 [main] [findMaxElement] [38] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found max element. max = 9

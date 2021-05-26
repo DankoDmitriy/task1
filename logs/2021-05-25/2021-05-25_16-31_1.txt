@@ -1,0 +1,1 @@
+2021-05-25 16:31:26 [main] [countQuantityPositiveElements] [77] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 2 3 4 5 6 7 8 9 

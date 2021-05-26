@@ -19,10 +19,10 @@ public class CustomStringValidator {
         Pattern pattern = Pattern.compile(REG_EXP_VALIDATION_STRING);
         Matcher matcher = pattern.matcher(inputString);
         while (matcher.find()) {
-            logger.log(Level.INFO, "String is not valid" + inputString);
+            logger.log(Level.INFO, "String is not valid:->" + inputString);
             return false;
         }
-        logger.log(Level.INFO, "String is valid" + inputString);
+        logger.log(Level.INFO, "String is valid:->" + inputString);
         return true;
     }
 }

@@ -1,0 +1,4 @@
+2021-05-24 13:25:35 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 122
+2021-05-24 13:25:36 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 211
+2021-05-24 13:25:37 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 123
+2021-05-24 13:25:37 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 123

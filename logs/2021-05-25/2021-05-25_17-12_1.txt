@@ -1,0 +1,52 @@
+2021-05-25 17:12:21 [main] [parserStringToIntString] [19] ERROR com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero
+2021-05-25 17:12:21 [main] [parserStringToIntString] [19] ERROR com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero
+2021-05-25 17:12:21 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->1 22 333
+2021-05-25 17:12:21 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 1
+2021-05-25 17:12:21 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 22
+2021-05-25 17:12:21 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 333
+2021-05-25 17:12:21 [main] [parserStringToIntString] [41] INFO  com.danko.customarray.parser.Parser - int[] created.
+2021-05-25 17:12:21 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->asd32 efs312 fdsd
+2021-05-25 17:12:21 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->asdvg 32 fdsdf3 dsf
+2021-05-25 17:12:21 [main] [parserStringToIntString] [34] ERROR com.danko.customarray.parser.Parser - There was no correct information in the data
+2021-05-25 17:12:21 [main] [reader] [19] ERROR com.danko.customarray.reader.DataReader - File can not valid for CustomArray...
+2021-05-25 17:12:21 [main] [reader] [22] DEBUG com.danko.customarray.reader.DataReader - File has been validated
+2021-05-25 17:12:21 [main] [reader] [34] INFO  com.danko.customarray.reader.DataReader - File was read. Result:[123 111 3321 123]
+2021-05-25 17:12:21 [main] [countQuantityPositiveElements] [77] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 2 3 4 5 6 7 8 9 
+2021-05-25 17:12:21 [main] [findMaxElement] [35] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 22 333 
+2021-05-25 17:12:21 [main] [findMaxElement] [42] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found max element. max = 333
+2021-05-25 17:12:21 [main] [countQuantityNegativeElements] [92] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 -2 3 4 -5 6 -7 8 9 
+2021-05-25 17:12:21 [main] [findMinElement] [19] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 22 333 
+2021-05-25 17:12:21 [main] [findMinElement] [26] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found min element. min = 1
+2021-05-25 17:12:21 [main] [calculateArithmeticMean] [52] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 2 3 4 5 6 7 8 9 
+2021-05-25 17:12:21 [main] [calculateSum] [63] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 2 3 4 5 6 7 8 9 
+2021-05-25 17:12:21 [main] [calculateSum] [63] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 2 3 4 5 6 7 8 9 
+2021-05-25 17:12:21 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->12dsa 21ddas ,13
+2021-05-25 17:12:21 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->123 321 432
+2021-05-25 17:12:21 [main] [stringVadidator] [16] DEBUG com.danko.customarray.validation.CustomStringValidator - Input string is empty
+2021-05-25 17:12:21 [main] [stringVadidator] [16] DEBUG com.danko.customarray.validation.CustomStringValidator - Input string is empty
+2021-05-25 17:12:34 [main] [parserStringToIntString] [19] ERROR com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero
+2021-05-25 17:12:34 [main] [parserStringToIntString] [19] ERROR com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero
+2021-05-25 17:12:34 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->1 22 333
+2021-05-25 17:12:34 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 1
+2021-05-25 17:12:34 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 22
+2021-05-25 17:12:34 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 333
+2021-05-25 17:12:34 [main] [parserStringToIntString] [41] INFO  com.danko.customarray.parser.Parser - int[] created.
+2021-05-25 17:12:34 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->asd32 efs312 fdsd
+2021-05-25 17:12:34 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->asdvg 32 fdsdf3 dsf
+2021-05-25 17:12:34 [main] [parserStringToIntString] [34] ERROR com.danko.customarray.parser.Parser - There was no correct information in the data
+2021-05-25 17:12:34 [main] [reader] [19] ERROR com.danko.customarray.reader.DataReader - File can not valid for CustomArray...
+2021-05-25 17:12:34 [main] [reader] [22] DEBUG com.danko.customarray.reader.DataReader - File has been validated
+2021-05-25 17:12:34 [main] [reader] [34] INFO  com.danko.customarray.reader.DataReader - File was read. Result:[123 111 3321 123]
+2021-05-25 17:12:34 [main] [countQuantityPositiveElements] [77] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 2 3 4 5 6 7 8 9 
+2021-05-25 17:12:34 [main] [findMaxElement] [35] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 22 333 
+2021-05-25 17:12:34 [main] [findMaxElement] [42] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found max element. max = 333
+2021-05-25 17:12:34 [main] [countQuantityNegativeElements] [92] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 -2 3 4 -5 6 -7 8 9 
+2021-05-25 17:12:34 [main] [findMinElement] [19] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 22 333 
+2021-05-25 17:12:34 [main] [findMinElement] [26] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found min element. min = 1
+2021-05-25 17:12:34 [main] [calculateArithmeticMean] [52] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 2 3 4 5 6 7 8 9 
+2021-05-25 17:12:34 [main] [calculateSum] [63] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 2 3 4 5 6 7 8 9 
+2021-05-25 17:12:34 [main] [calculateSum] [63] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 2 3 4 5 6 7 8 9 
+2021-05-25 17:12:34 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->12dsa 21ddas ,13
+2021-05-25 17:12:34 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->123 321 432
+2021-05-25 17:12:34 [main] [stringVadidator] [16] DEBUG com.danko.customarray.validation.CustomStringValidator - Input string is empty
+2021-05-25 17:12:34 [main] [stringVadidator] [16] DEBUG com.danko.customarray.validation.CustomStringValidator - Input string is empty

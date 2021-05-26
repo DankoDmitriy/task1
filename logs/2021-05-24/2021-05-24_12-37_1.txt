@@ -1,0 +1,6 @@
+2021-05-24 12:37:43 [main] [findMinElement] [19] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-24 12:37:43 [main] [findMinElement] [26] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found min element. min = 0
+2021-05-24 12:37:43 [main] [findMaxElement] [35] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-24 12:37:43 [main] [findMaxElement] [42] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found max element. max = 9
+2021-05-24 12:37:43 [main] [bubbleSort] [19] DEBUG danko.customarray.service.impl.CustomArraySortsServiceImpl - Input array in bubbleSort: 1 6 2 5 3 4 7 9 8 0 
+2021-05-24 12:37:43 [main] [bubbleSort] [29] INFO  danko.customarray.service.impl.CustomArraySortsServiceImpl - Array has been sorted by bubbleSort. Result: 0 1 2 3 4 5 6 7 8 9 

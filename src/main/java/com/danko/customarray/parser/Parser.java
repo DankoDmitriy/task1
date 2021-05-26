@@ -1,10 +1,10 @@
 package com.danko.customarray.parser;
 
+import com.danko.customarray.exception.CustomArrayException;
 import com.danko.customarray.validation.CustomStringValidator;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.util.ArrayUtils;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;
@@ -14,9 +14,10 @@ public class Parser {
     public static Logger logger = LogManager.getLogger();
     public static final String REG_EXP_STRING_TO_INT = "\\s?(\\d+)";
 
-    public int[] parserStringToIntString(ArrayList<String> inputArrayString) {
+    public int[] parserStringToIntString(ArrayList<String> inputArrayString) throws CustomArrayException {
         if (inputArrayString == null || inputArrayString.size() == 0) {
-            logger.log(Level.DEBUG, "Input ArrayList is empty");
+            logger.log(Level.ERROR, "Input ArrayList is empty or size is zero");
+            throw new CustomArrayException("Input ArrayList is empty or size is zero");
         }
         Pattern pattern = Pattern.compile(REG_EXP_STRING_TO_INT);
         ArrayList<Integer> integers = new ArrayList<Integer>();
@@ -29,10 +30,15 @@ public class Parser {
                 }
             }
         }
+        if (integers.size() == 0) {
+            logger.log(Level.ERROR, "There was no correct information in the data");
+            throw new CustomArrayException("There was no correct information in the data");
+        }
         int[] result = new int[integers.size()];
         for (int i = 0; i < integers.size(); i++) {
             result[i] = integers.get(i);
         }
+        logger.log(Level.INFO, "int[] created.");
         return result;
     }
 }

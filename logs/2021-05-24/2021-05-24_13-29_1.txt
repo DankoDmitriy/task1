@@ -1,0 +1,11 @@
+2021-05-24 13:29:08 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 22
+2021-05-24 13:29:08 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 333
+2021-05-24 13:29:09 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 4444
+2021-05-24 13:29:10 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 55555
+2021-05-24 13:29:10 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 66666
+2021-05-24 13:29:11 [main] [parserStringToIntString] [27] DEBUG com.danko.customarray.parser.Parser - java.util.regex.Matcher[pattern=\s?(\d+) region=0,23 lastmatch=]
+2021-05-24 13:29:26 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 122
+2021-05-24 13:29:26 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 211
+2021-05-24 13:29:27 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 123
+2021-05-24 13:29:27 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 123
+2021-05-24 13:29:28 [main] [parserStringToIntString] [27] DEBUG com.danko.customarray.parser.Parser - java.util.regex.Matcher[pattern=\s?(\d+) region=0,24 lastmatch=]

@@ -1,0 +1,20 @@
+2021-05-25 15:00:01 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->1 22 333
+2021-05-25 15:00:01 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 1
+2021-05-25 15:00:01 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 22
+2021-05-25 15:00:01 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 333
+2021-05-25 15:00:01 [main] [parserStringToIntString] [41] INFO  com.danko.customarray.parser.Parser - int[] created.
+2021-05-25 15:00:11 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->1 22 333
+2021-05-25 15:00:11 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 1
+2021-05-25 15:00:11 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 22
+2021-05-25 15:00:11 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 333
+2021-05-25 15:00:11 [main] [parserStringToIntString] [41] INFO  com.danko.customarray.parser.Parser - int[] created.
+2021-05-25 15:00:35 [main] [parserStringToIntString] [19] ERROR com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero
+2021-05-25 15:00:35 [main] [parserStringToIntString] [19] ERROR com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero
+2021-05-25 15:00:35 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->1 22 333
+2021-05-25 15:00:35 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 1
+2021-05-25 15:00:35 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 22
+2021-05-25 15:00:35 [main] [parserStringToIntString] [29] DEBUG com.danko.customarray.parser.Parser - 333
+2021-05-25 15:00:35 [main] [parserStringToIntString] [41] INFO  com.danko.customarray.parser.Parser - int[] created.
+2021-05-25 15:00:35 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->asd32 efs312 fdsd
+2021-05-25 15:00:35 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->asdvg 32 fdsdf3 dsf
+2021-05-25 15:00:35 [main] [parserStringToIntString] [34] ERROR com.danko.customarray.parser.Parser - There was no correct information in the data

@@ -1,0 +1,17 @@
+2021-05-24 13:22:45 [main] [findMinElement] [19] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-24 13:22:45 [main] [findMinElement] [26] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found min element. min = 0
+2021-05-24 13:22:45 [main] [findMaxElement] [35] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 1 6 2 5 3 4 7 9 8 0 
+2021-05-24 13:22:45 [main] [findMaxElement] [42] INFO  danko.customarray.service.impl.CustomArrayMathServiceImpl - Has been found max element. max = 9
+2021-05-24 13:22:45 [main] [bubbleSort] [19] DEBUG danko.customarray.service.impl.CustomArraySortsServiceImpl - Input array in bubbleSort: 1 6 2 5 3 4 7 9 8 0 
+2021-05-24 13:22:45 [main] [bubbleSort] [29] INFO  danko.customarray.service.impl.CustomArraySortsServiceImpl - Array has been sorted by bubbleSort. Result: 0 1 2 3 4 5 6 7 8 9 
+2021-05-24 13:22:45 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 22
+2021-05-24 13:22:45 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 333
+2021-05-24 13:22:45 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 4444
+2021-05-24 13:22:45 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 55555
+2021-05-24 13:22:45 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 66666
+2021-05-24 13:22:45 [main] [parserStringToIntString] [27] DEBUG com.danko.customarray.parser.Parser - java.util.regex.Matcher[pattern=\s?(\d+) region=0,23 lastmatch=]
+2021-05-24 13:22:45 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 122
+2021-05-24 13:22:45 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 211
+2021-05-24 13:22:45 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 123
+2021-05-24 13:22:45 [main] [parserStringToIntString] [25] DEBUG com.danko.customarray.parser.Parser - 123
+2021-05-24 13:22:45 [main] [parserStringToIntString] [27] DEBUG com.danko.customarray.parser.Parser - java.util.regex.Matcher[pattern=\s?(\d+) region=0,24 lastmatch=]

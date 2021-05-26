@@ -1,0 +1,2 @@
+2021-05-25 12:47:09 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->12dsa 21ddas ,13
+2021-05-25 12:47:35 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->123 321 432

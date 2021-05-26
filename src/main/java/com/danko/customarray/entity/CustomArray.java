@@ -8,6 +8,7 @@ public class CustomArray {
     private int[] array;
 
     public CustomArray() {
+        array = new int[0];
     }
 
     public CustomArray(int... array) throws CustomArrayException {

@@ -1,0 +1,9 @@
+2021-05-25 12:48:04 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->123 321 432
+2021-05-25 12:48:24 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->123 321 432
+2021-05-25 12:48:24 [main] [stringVadidator] [16] DEBUG com.danko.customarray.validation.CustomStringValidator - Input string is empty
+2021-05-25 12:48:24 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->12dsa 21ddas ,13
+2021-05-25 12:48:24 [main] [stringVadidator] [16] DEBUG com.danko.customarray.validation.CustomStringValidator - Input string is empty
+2021-05-25 12:48:53 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->12dsa 21ddas ,13
+2021-05-25 12:48:53 [main] [stringVadidator] [25] INFO  com.danko.customarray.validation.CustomStringValidator - String is valid:->123 321 432
+2021-05-25 12:48:53 [main] [stringVadidator] [16] DEBUG com.danko.customarray.validation.CustomStringValidator - Input string is empty
+2021-05-25 12:48:53 [main] [stringVadidator] [16] DEBUG com.danko.customarray.validation.CustomStringValidator - Input string is empty

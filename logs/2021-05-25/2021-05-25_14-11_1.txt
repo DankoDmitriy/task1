@@ -1,0 +1,5 @@
+2021-05-25 14:11:06 [main] [parserStringToIntString] [19] DEBUG com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero
+2021-05-25 14:11:10 [main] [parserStringToIntString] [19] DEBUG com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero
+2021-05-25 14:11:10 [main] [parserStringToIntString] [19] DEBUG com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero
+2021-05-25 14:11:41 [main] [parserStringToIntString] [19] ERROR com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero
+2021-05-25 14:11:41 [main] [parserStringToIntString] [19] ERROR com.danko.customarray.parser.Parser - Input ArrayList is empty or size is zero

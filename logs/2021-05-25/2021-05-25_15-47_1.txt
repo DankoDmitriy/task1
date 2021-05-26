@@ -1,0 +1,2 @@
+2021-05-25 15:47:23 [main] [reader] [22] DEBUG com.danko.customarray.reader.DataReader - File has been validated
+2021-05-25 15:47:23 [main] [reader] [34] INFO  com.danko.customarray.reader.DataReader - File was read. Result:[123 111 3321 123]

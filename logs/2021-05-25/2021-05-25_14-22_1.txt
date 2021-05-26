@@ -1,0 +1,3 @@
+2021-05-25 14:22:12 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->asd32 efs312 fdsd
+2021-05-25 14:22:12 [main] [stringVadidator] [22] INFO  com.danko.customarray.validation.CustomStringValidator - String is not valid:->asdvg 32 fdsdf3 dsf
+2021-05-25 14:22:12 [main] [parserStringToIntString] [34] ERROR com.danko.customarray.parser.Parser - There was no correct information in the data

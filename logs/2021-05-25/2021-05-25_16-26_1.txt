@@ -1,0 +1,2 @@
+2021-05-25 16:26:58 [main] [calculateArithmeticMean] [52] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 2 3 4 5 6 7 8 9 
+2021-05-25 16:26:58 [main] [calculateSum] [63] DEBUG danko.customarray.service.impl.CustomArrayMathServiceImpl - Input CustomArray: 0 1 2 3 4 5 6 7 8 9 
