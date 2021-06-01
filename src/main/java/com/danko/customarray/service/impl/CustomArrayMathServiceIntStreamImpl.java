@@ -3,6 +3,7 @@ package com.danko.customarray.service.impl;
 import com.danko.customarray.entity.CustomArray;
 import com.danko.customarray.exception.CustomArrayException;
 import com.danko.customarray.service.CustomArrayMathService;
+import com.danko.customarray.validation.CustomArrayValidator;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,7 +19,7 @@ public class CustomArrayMathServiceIntStreamImpl implements CustomArrayMathServi
 
     @Override
     public int findMinElement(CustomArray array) throws CustomArrayException {
-        if (array == null || array.getLength() == 0) {
+        if (!CustomArrayValidator.isCustomArrayValid(array)) {
             throw new CustomArrayException("Input CustomArray is empty or null");
         }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
@@ -30,7 +31,7 @@ public class CustomArrayMathServiceIntStreamImpl implements CustomArrayMathServi
 
     @Override
     public int findMaxElement(CustomArray array) throws CustomArrayException {
-        if (array == null || array.getLength() == 0) {
+        if (!CustomArrayValidator.isCustomArrayValid(array)) {
             throw new CustomArrayException("Input CustomArray is empty or null");
         }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
@@ -42,13 +43,17 @@ public class CustomArrayMathServiceIntStreamImpl implements CustomArrayMathServi
 
     @Override
     public double calculateArithmeticMean(CustomArray array) throws CustomArrayException {
+        if (!CustomArrayValidator.isCustomArrayValid(array)) {
+            throw new CustomArrayException("Input CustomArray is empty or null");
+        }
+        logger.log(Level.DEBUG, "Input CustomArray: " + array);
         OptionalDouble result = Arrays.stream(array.getArray()).average();
         return result.getAsDouble();
     }
 
     @Override
     public int calculateSum(CustomArray array) throws CustomArrayException {
-        if (array == null || array.getLength() == 0) {
+        if (!CustomArrayValidator.isCustomArrayValid(array)) {
             throw new CustomArrayException("Input CustomArray is empty or null");
         }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
@@ -60,11 +65,23 @@ public class CustomArrayMathServiceIntStreamImpl implements CustomArrayMathServi
 
     @Override
     public int countQuantityPositiveElements(CustomArray array) throws CustomArrayException {
-        return 0;
+        if (!CustomArrayValidator.isCustomArrayValid(array)) {
+            throw new CustomArrayException("Input CustomArray is empty or null");
+        }
+        logger.log(Level.DEBUG, "Input CustomArray: " + array);
+        IntStream intStream = Arrays.stream(array.getArray());
+        int result = (int) intStream.filter(var -> var > 0).count();
+        return result;
     }
 
     @Override
     public int countQuantityNegativeElements(CustomArray array) throws CustomArrayException {
-        return 0;
+        if (!CustomArrayValidator.isCustomArrayValid(array)) {
+            throw new CustomArrayException("Input CustomArray is empty or null");
+        }
+        logger.log(Level.DEBUG, "Input CustomArray: " + array);
+        IntStream intStream = Arrays.stream(array.getArray());
+        int result = (int) intStream.filter(var -> var < 0).count();
+        return result;
     }
 }

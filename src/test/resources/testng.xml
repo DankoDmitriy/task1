@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ScriptForFullCycle" verbose="1">
+    <test name="FullCircleWorkTest">
+        <groups>
+            <run>
+                <include name="mainGroup"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.danko.customarray.reader.DataReaderTest"/>
+            <class name="com.danko.customarray.parser.ParserTest"/>
+            <class name="com.danko.customarray.maker.CustomArrayMakerTest"/>
+            <class name="com.danko.customarray.service.CustomArrayMathServiceImplTest"/>
+            <class name="com.danko.customarray.service.CustomArraySortsServiceImplTest"/>
+        </classes>
+    </test>
+
+    <test name="Services Tests">
+        <classes>
+            <class name="com.danko.customarray.service.CustomArrayMathServiceImplTest"/>
+            <class name="com.danko.customarray.service.CustomArraySortsServiceImplTest"/>
+        </classes>
+    </test>
+
+    <test name="DataReader Test - select method in class">
+        <classes>
+            <class name="com.danko.customarray.reader.DataReaderTest">
+                <methods>
+                    <!--Here you can used reg exp. EXAMPLE-->
+                    <!--<include name=".*enabledTestMethod.*"/>-->
+                    <!--<exclude name=".*brokenTestMethod.*"/>-->
+
+                    <include name="positiveGetCorrectArray"/>
+
+                    <!--selection of all tests with the word negative -->
+                    <include name=".*negative.*"/>
+
+                    <!--EXCLUDE - you can switch off some test.  -->
+                    <exclude name="negativeFileIsNotCorrect"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Groups of groups: NULL EMPTY EXCEPTION">
+        <groups>
+            <define name="CustomException">
+                <include name="CustomArrayException"/>
+            </define>
+            <define name="NullAndEmptyAndCustomException">
+                <include name="CustomException"/>
+                <include name="NullAndEmpty"/>
+            </define>
+            <run>
+                <!--<include name="NullAndEmptyAndCustomException"/>-->
+                <!--missing tests from group: NullAndEmpty (ParserTest -> negativeInputArrayStringIsNull)-->
+                <include name="CustomException"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.danko.customarray.entity.CustomArrayTest"/>
+            <class name="com.danko.customarray.maker.CustomArrayMakerTest"/>
+            <class name="com.danko.customarray.parser.ParserTest"/>
+            <class name="com.danko.customarray.reader.DataReaderTest"/>
+            <class name="com.danko.customarray.service.CustomArraySortsServiceImplTest"/>
+            <class name="com.danko.customarray.service.CustomArrayMathServiceImplTest"/>
+            <class name="com.danko.customarray.validation.CustomArrayValidatorTest"/>
+            <class name="com.danko.customarray.validation.CustomFileValidatorTest"/>
+            <class name="com.danko.customarray.validation.CustomStringValidatorTest"/>
+        </classes>
+    </test>
+
+</suite>

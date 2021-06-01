@@ -3,30 +3,41 @@ package com.danko.customarray.service;
 import com.danko.customarray.entity.CustomArray;
 import com.danko.customarray.exception.CustomArrayException;
 import com.danko.customarray.service.impl.CustomArraySortsServiceImpl;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertThrows;
 import static org.testng.internal.junit.ArrayAsserts.assertArrayEquals;
 
+//import org.junit.Test;
+
 public class CustomArraySortsServiceImplTest {
 
-    @Test
-    public void positiveBubbleSort() throws Exception {
-        CustomArray actual = new CustomArray(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-        CustomArray testMas = new CustomArray(0, 1, 3, 2, 5, 4, 6, 7, 8, 9);
+    public static CustomArray ACTUAL_CUSTOM_ARRAY;
+    public static CustomArray ACTUAL_CUSTOM_ARRAY_TEST;
 
-        CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
-        CustomArray expected = customArraySortsService.bubbleSort(testMas);
-        assertArrayEquals(actual.getArray(), expected.getArray());
+    static {
+        try {
+            ACTUAL_CUSTOM_ARRAY = new CustomArray(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+            ACTUAL_CUSTOM_ARRAY_TEST = new CustomArray(0, 1, 3, 2, 5, 4, 6, 7, 8, 9);
+        } catch (CustomArrayException e) {
+            e.printStackTrace();
+        }
     }
 
-    @Test
+    @Test(groups = "mainGroup", priority = 4)
+    public void positiveBubbleSort() throws Exception {
+        CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
+        CustomArray expected = customArraySortsService.bubbleSort(ACTUAL_CUSTOM_ARRAY_TEST);
+        assertArrayEquals(ACTUAL_CUSTOM_ARRAY.getArray(), expected.getArray());
+    }
+
+    @Test(groups = "CustomArrayException", priority = 9)
     public void positiveCustomArrayIsNullBubbleSort() {
         CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
         assertThrows(CustomArrayException.class, () -> customArraySortsService.bubbleSort(null));
     }
 
-    @Test
+    @Test(groups = "CustomArrayException", priority = 10)
     public void positiveCustomArrayIsEmptyBubbleSort() {
         CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
         CustomArray testMas = new CustomArray();
@@ -36,21 +47,18 @@ public class CustomArraySortsServiceImplTest {
 
     @Test
     public void positiveInsertsSort() throws Exception {
-        CustomArray actual = new CustomArray(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-        CustomArray testMas = new CustomArray(0, 1, 3, 2, 5, 4, 6, 7, 8, 9);
-
         CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
-        CustomArray expected = customArraySortsService.insertsSort(testMas);
-        assertArrayEquals(actual.getArray(), expected.getArray());
+        CustomArray expected = customArraySortsService.insertsSort(ACTUAL_CUSTOM_ARRAY_TEST);
+        assertArrayEquals(ACTUAL_CUSTOM_ARRAY.getArray(), expected.getArray());
     }
 
-    @Test
+    @Test(groups = "CustomArrayException", priority = 11)
     public void positiveCustomArrayIsNullInsertsSort() {
         CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
         assertThrows(CustomArrayException.class, () -> customArraySortsService.insertsSort(null));
     }
 
-    @Test
+    @Test(groups = "CustomArrayException", priority = 12)
     public void positiveCustomArrayIsEmptyInsertsSort() {
         CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
         CustomArray testMas = new CustomArray();
@@ -60,21 +68,18 @@ public class CustomArraySortsServiceImplTest {
 
     @Test
     public void positiveSelectionSort() throws Exception {
-        CustomArray actual = new CustomArray(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-        CustomArray testMas = new CustomArray(0, 1, 3, 2, 5, 4, 6, 7, 8, 9);
-
         CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
-        CustomArray expected = customArraySortsService.selectionSort(testMas);
-        assertArrayEquals(actual.getArray(), expected.getArray());
+        CustomArray expected = customArraySortsService.selectionSort(ACTUAL_CUSTOM_ARRAY_TEST);
+        assertArrayEquals(ACTUAL_CUSTOM_ARRAY.getArray(), expected.getArray());
     }
 
-    @Test
+    @Test(groups = "CustomArrayException", priority = 13)
     public void positiveCustomArrayIsNullSelectionSort() {
         CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
         assertThrows(CustomArrayException.class, () -> customArraySortsService.selectionSort(null));
     }
 
-    @Test
+    @Test(groups = "CustomArrayException", priority = 14)
     public void positiveCustomArrayIsEmptySelectionSort() {
         CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
         CustomArray testMas = new CustomArray();

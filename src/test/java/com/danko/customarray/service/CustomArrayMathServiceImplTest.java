@@ -3,29 +3,43 @@ package com.danko.customarray.service;
 import com.danko.customarray.entity.CustomArray;
 import com.danko.customarray.exception.CustomArrayException;
 import com.danko.customarray.service.impl.CustomArrayMathServiceImpl;
-import org.junit.Test;
+//import org.junit.Test;
+import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertThrows;
 
 public class CustomArrayMathServiceImplTest {
+    public static CustomArray ACTUAL_CUSTOM_ARRAY;
+    public final static int ACTUAL_MIN_ELEMENT = 0;
+    public final static int ACTUAL_MAX_ELEMENT = 9;
+    public final static double ACTUAL_MEAN_VALUE = 4.5;
+    public final static int ACTUAL_SUM = 45;
+    public final static int ACTUAL_POSITIVE_ELEMENTS_COUNT = 9;
+    public final static int ACTUAL_NEGATIVE_ELEMENTS_COUNT = 0;
 
-    @Test
-    public void positiveFindMinElementTest() throws CustomArrayException {
-        CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
-        CustomArray testMas = new CustomArray(1, 22, 333);
-        int actual = 1;
-        int expected = customArrayMathService.findMinElement(testMas);
-        assertEquals(actual, expected);
+    static {
+        try {
+            ACTUAL_CUSTOM_ARRAY = new CustomArray(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+        } catch (CustomArrayException e) {
+            e.printStackTrace();
+        }
     }
 
-    @Test
+    @Test(groups = "mainGroup", priority = 3)
+    public void positiveFindMinElementTest() throws CustomArrayException {
+        CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
+        int expected = customArrayMathService.findMinElement(ACTUAL_CUSTOM_ARRAY);
+        assertEquals(ACTUAL_MIN_ELEMENT, expected);
+    }
+
+    @Test(groups = "CustomArrayException", priority = 5)
     public void positiveCustomArrayIsNullFindMinElementTest() {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
         assertThrows(CustomArrayException.class, () -> customArrayMathService.findMinElement(null));
     }
 
-    @Test
+    @Test(groups = "CustomArrayException", priority = 6)
     public void positiveCustomArrayIsEmptyFindMinElementTest() {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
         CustomArray testMas = new CustomArray();
@@ -36,19 +50,17 @@ public class CustomArrayMathServiceImplTest {
     @Test
     public void positiveFindMaxElementTest() throws CustomArrayException {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
-        CustomArray testMas = new CustomArray(1, 22, 333);
-        int actual = 333;
-        int expected = customArrayMathService.findMaxElement(testMas);
-        assertEquals(actual, expected);
+        int expected = customArrayMathService.findMaxElement(ACTUAL_CUSTOM_ARRAY);
+        assertEquals(ACTUAL_MAX_ELEMENT, expected);
     }
 
-    @Test
+    @Test (groups = "CustomArrayException", priority = 7)
     public void positiveCustomArrayIsNullFindMaxElementTest() {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
         assertThrows(CustomArrayException.class, () -> customArrayMathService.findMaxElement(null));
     }
 
-    @Test
+    @Test(groups = "CustomArrayException", priority = 8)
     public void positiveCustomArrayIsEmptyFindMaxElementTest() {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
         CustomArray testMas = new CustomArray();
@@ -60,10 +72,8 @@ public class CustomArrayMathServiceImplTest {
     @Test
     public void positiveCalculateArithmeticMeanTest() throws CustomArrayException {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
-        CustomArray testMas = new CustomArray(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-        double actual = 4.5;
-        double expected = customArrayMathService.calculateArithmeticMean(testMas);
-        assertEquals(actual, expected);
+        double expected = customArrayMathService.calculateArithmeticMean(ACTUAL_CUSTOM_ARRAY);
+        assertEquals(ACTUAL_MEAN_VALUE, expected);
     }
 
     @Test
@@ -84,10 +94,8 @@ public class CustomArrayMathServiceImplTest {
     @Test
     public void positiveCalculateSumTest() throws CustomArrayException {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
-        CustomArray testMas = new CustomArray(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-        int actual = 45;
-        int expected = customArrayMathService.calculateSum(testMas);
-        assertEquals(actual, expected);
+        int expected = customArrayMathService.calculateSum(ACTUAL_CUSTOM_ARRAY);
+        assertEquals(ACTUAL_SUM, expected);
     }
 
     @Test
@@ -107,10 +115,8 @@ public class CustomArrayMathServiceImplTest {
     @Test
     public void positiveCountQuantityPositiveElementsTest() throws CustomArrayException {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
-        CustomArray testMas = new CustomArray(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-        int actual = 9;
-        int expected = customArrayMathService.countQuantityPositiveElements(testMas);
-        assertEquals(actual, expected);
+        int expected = customArrayMathService.countQuantityPositiveElements(ACTUAL_CUSTOM_ARRAY);
+        assertEquals(ACTUAL_POSITIVE_ELEMENTS_COUNT, expected);
     }
 
     @Test
@@ -130,10 +136,8 @@ public class CustomArrayMathServiceImplTest {
     @Test
     public void positiveCountQuantityNegativeElementsTest() throws CustomArrayException {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
-        CustomArray testMas = new CustomArray(0, 1, -2, 3, 4, -5, 6, -7, 8, 9);
-        int actual = 3;
-        int expected = customArrayMathService.countQuantityNegativeElements(testMas);
-        assertEquals(actual, expected);
+        int expected = customArrayMathService.countQuantityNegativeElements(ACTUAL_CUSTOM_ARRAY);
+        assertEquals(ACTUAL_NEGATIVE_ELEMENTS_COUNT, expected);
     }
 
     @Test

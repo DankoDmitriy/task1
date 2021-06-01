@@ -27,9 +27,12 @@ public class Main {
 //        Parser parser = new Parser();
 //        parser.parserStringToIntString(arrayList);
 
-        CustomArrayMathServiceIntStreamImpl customArrayMathServiceIntStream = new CustomArrayMathServiceIntStreamImpl();
-        int a = customArrayMathServiceIntStream.findMinElement(customArray);
-        System.out.println(a);
+//        CustomArrayMathServiceIntStreamImpl customArrayMathServiceIntStream = new CustomArrayMathServiceIntStreamImpl();
+//        int a = customArrayMathServiceIntStream.findMinElement(customArray);
+//        System.out.println(a);
+//        System.out.println(customArrayMathServiceIntStream.calculateSum(customArray));
+//        System.out.println(customArrayMathServiceIntStream.countQuantityPositiveElements(customArray));
+//        System.out.println(customArrayMathServiceIntStream.countQuantityNegativeElements(customArray));
 
     }
 }
