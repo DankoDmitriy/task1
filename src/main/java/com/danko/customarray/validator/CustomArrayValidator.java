@@ -1,4 +1,4 @@
-package com.danko.customarray.validation;
+package com.danko.customarray.validator;
 
 import com.danko.customarray.entity.CustomArray;
 

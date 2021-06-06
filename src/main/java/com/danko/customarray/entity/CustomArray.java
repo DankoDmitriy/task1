@@ -50,10 +50,12 @@ public class CustomArray {
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        for (int i : array) {
-            stringBuilder.append(i).append(" ");
+        for (int element : array) {
+            stringBuilder.append(element).append(" ");
         }
         return stringBuilder.toString();
+        /*Other variant*/
+//        return Arrays.toString(array);
     }
 
     @Override

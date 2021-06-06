@@ -3,7 +3,6 @@ package com.danko.customarray.service;
 import com.danko.customarray.entity.CustomArray;
 import com.danko.customarray.exception.CustomArrayException;
 import com.danko.customarray.service.impl.CustomArrayMathServiceImpl;
-//import org.junit.Test;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -44,7 +43,6 @@ public class CustomArrayMathServiceImplTest {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
         CustomArray testMas = new CustomArray();
         assertThrows(CustomArrayException.class, () -> customArrayMathService.findMinElement(testMas));
-
     }
 
     @Test
@@ -54,7 +52,7 @@ public class CustomArrayMathServiceImplTest {
         assertEquals(ACTUAL_MAX_ELEMENT, expected);
     }
 
-    @Test (groups = "CustomArrayException", priority = 7)
+    @Test(groups = "CustomArrayException", priority = 7)
     public void positiveCustomArrayIsNullFindMaxElementTest() {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
         assertThrows(CustomArrayException.class, () -> customArrayMathService.findMaxElement(null));
@@ -65,9 +63,7 @@ public class CustomArrayMathServiceImplTest {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
         CustomArray testMas = new CustomArray();
         assertThrows(CustomArrayException.class, () -> customArrayMathService.findMinElement(testMas));
-
     }
-
 
     @Test
     public void positiveCalculateArithmeticMeanTest() throws CustomArrayException {
@@ -87,9 +83,7 @@ public class CustomArrayMathServiceImplTest {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
         CustomArray testMas = new CustomArray();
         assertThrows(CustomArrayException.class, () -> customArrayMathService.calculateArithmeticMean(testMas));
-
     }
-
 
     @Test
     public void positiveCalculateSumTest() throws CustomArrayException {
@@ -109,7 +103,6 @@ public class CustomArrayMathServiceImplTest {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
         CustomArray testMas = new CustomArray();
         assertThrows(CustomArrayException.class, () -> customArrayMathService.calculateSum(testMas));
-
     }
 
     @Test
@@ -130,7 +123,6 @@ public class CustomArrayMathServiceImplTest {
         CustomArrayMathServiceImpl customArrayMathService = new CustomArrayMathServiceImpl();
         CustomArray testMas = new CustomArray();
         assertThrows(CustomArrayException.class, () -> customArrayMathService.countQuantityPositiveElements(testMas));
-
     }
 
     @Test

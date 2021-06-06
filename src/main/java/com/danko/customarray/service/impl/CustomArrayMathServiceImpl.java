@@ -14,7 +14,8 @@ public class CustomArrayMathServiceImpl implements CustomArrayMathService {
     @Override
     public int findMinElement(CustomArray array) throws CustomArrayException {
         if (array == null || array.getLength() == 0) {
-            throw new CustomArrayException("Input CustomArray is empty or null");
+            logger.log(Level.INFO, "Input CustomArray is empty or null. Value search is not possible.");
+            throw new CustomArrayException("Input CustomArray is empty or null. Value search is not possible.");
         }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         int result = array.getElementByIndex(FIRST_ELEMENT_INDEX);
@@ -30,7 +31,8 @@ public class CustomArrayMathServiceImpl implements CustomArrayMathService {
     @Override
     public int findMaxElement(CustomArray array) throws CustomArrayException {
         if (array == null || array.getLength() == 0) {
-            throw new CustomArrayException("Input CustomArray is empty or null");
+            logger.log(Level.INFO, "Input CustomArray is empty or null. Value search is not possible.");
+            throw new CustomArrayException("Input CustomArray is empty or null. Value search is not possible.");
         }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         int result = array.getElementByIndex(FIRST_ELEMENT_INDEX);
@@ -47,7 +49,8 @@ public class CustomArrayMathServiceImpl implements CustomArrayMathService {
     public double calculateArithmeticMean(CustomArray array) throws CustomArrayException {
 //        here need to add exceptions to an NULL array and array size = 0.
         if (array == null || array.getLength() == 0) {
-            throw new CustomArrayException("Input CustomArray is empty or null");
+            logger.log(Level.INFO, "Input CustomArray is empty or null. Value calculate is not possible.");
+            throw new CustomArrayException("Input CustomArray is empty or null. Value calculate is not possible.");
         }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         double sumArray = calculateSum(array);
@@ -58,7 +61,8 @@ public class CustomArrayMathServiceImpl implements CustomArrayMathService {
     @Override
     public int calculateSum(CustomArray array) throws CustomArrayException {
         if (array == null || array.getLength() == 0) {
-            throw new CustomArrayException("Input CustomArray is empty or null");
+            logger.log(Level.INFO, "Input CustomArray is empty or null. Value calculate is not possible.");
+            throw new CustomArrayException("Input CustomArray is empty or null. Value calculate is not possible.");
         }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         int sumArray = 0;
@@ -72,7 +76,8 @@ public class CustomArrayMathServiceImpl implements CustomArrayMathService {
     public int countQuantityPositiveElements(CustomArray array) throws CustomArrayException {
 //        here need to add exceptions to an NULL array and array size = 0.
         if (array == null || array.getLength() == 0) {
-            throw new CustomArrayException("Input CustomArray is empty or null");
+            logger.log(Level.INFO, "Input CustomArray is empty or null. Value count is not possible.");
+            throw new CustomArrayException("Input CustomArray is empty or null. Value count is not possible.");
         }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         int result = 0;
@@ -87,7 +92,8 @@ public class CustomArrayMathServiceImpl implements CustomArrayMathService {
     @Override
     public int countQuantityNegativeElements(CustomArray array) throws CustomArrayException {
         if (array == null || array.getLength() == 0) {
-            throw new CustomArrayException("Input CustomArray is empty or null");
+            logger.log(Level.INFO, "Input CustomArray is empty or null. Value count is not possible.");
+            throw new CustomArrayException("Input CustomArray is empty or null. Value count is not possible.");
         }
         logger.log(Level.DEBUG, "Input CustomArray: " + array);
         int result = 0;

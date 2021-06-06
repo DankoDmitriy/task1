@@ -3,7 +3,7 @@ package com.danko.customarray.service.impl;
 import com.danko.customarray.entity.CustomArray;
 import com.danko.customarray.exception.CustomArrayException;
 import com.danko.customarray.service.CustomArraySortsService;
-import com.danko.customarray.validation.CustomArrayValidator;
+import com.danko.customarray.validator.CustomArrayValidator;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

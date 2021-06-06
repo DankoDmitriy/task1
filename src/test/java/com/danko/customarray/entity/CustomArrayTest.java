@@ -5,8 +5,6 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertThrows;
 
-//import org.junit.Test;
-
 public class CustomArrayTest {
     @Test(groups = "CustomArrayException")
     public void testCustomArrayConstructor() {

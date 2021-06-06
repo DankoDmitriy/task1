@@ -1,4 +1,4 @@
-package com.danko.customarray.validation;
+package com.danko.customarray.validator;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;

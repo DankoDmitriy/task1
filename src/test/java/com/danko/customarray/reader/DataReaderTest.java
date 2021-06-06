@@ -8,8 +8,6 @@ import java.util.Arrays;
 import static org.testng.Assert.assertThrows;
 import static org.testng.internal.junit.ArrayAsserts.assertArrayEquals;
 
-//import org.junit.Test;
-
 public class DataReaderTest {
     public final static String CORRECT_PATH = "test_data\\data.txt";
     public final static String NOT_CORRECT_PATH = "test_data\\data2.txt";

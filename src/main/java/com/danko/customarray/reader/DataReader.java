@@ -1,7 +1,7 @@
 package com.danko.customarray.reader;
 
 import com.danko.customarray.exception.CustomArrayException;
-import com.danko.customarray.validation.CustomFileValidator;
+import com.danko.customarray.validator.CustomFileValidator;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -8,8 +8,6 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertThrows;
 import static org.testng.internal.junit.ArrayAsserts.assertArrayEquals;
 
-//import org.junit.Test;
-
 public class CustomArraySortsServiceImplTest {
 
     public static CustomArray ACTUAL_CUSTOM_ARRAY;
@@ -42,7 +40,6 @@ public class CustomArraySortsServiceImplTest {
         CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
         CustomArray testMas = new CustomArray();
         assertThrows(CustomArrayException.class, () -> customArraySortsService.bubbleSort(testMas));
-
     }
 
     @Test
@@ -63,7 +60,6 @@ public class CustomArraySortsServiceImplTest {
         CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
         CustomArray testMas = new CustomArray();
         assertThrows(CustomArrayException.class, () -> customArraySortsService.insertsSort(testMas));
-
     }
 
     @Test
@@ -84,6 +80,5 @@ public class CustomArraySortsServiceImplTest {
         CustomArraySortsServiceImpl customArraySortsService = new CustomArraySortsServiceImpl();
         CustomArray testMas = new CustomArray();
         assertThrows(CustomArrayException.class, () -> customArraySortsService.selectionSort(testMas));
-
     }
 }
